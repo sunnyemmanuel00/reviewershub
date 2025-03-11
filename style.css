@@ -1,65 +1,115 @@
-/* General Styling for Both Forms */
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Hammersmith One', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     background-color: #f4f4f4;
-    margin: 0;
 }
 
-.form-container {
-    background: white;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+/* Sign Up & Sign In Container */
+.auth-container {
+    padding-top: 20px; /* Push content down */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Keep it centered */
+    justify-content: flex-start; /* Align to top */
+    padding-bottom: 50px; /* Add space at the bottom */
+}
+
+/* Title Styles */
+.auth-title {
     text-align: center;
-    width: 350px;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 200px; /* Adjust as needed */
+    margin-bottom: 20px; /* Adjust as needed */
+}
+.signin-page {
+    height: 50vh; /* Reduce the height */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Keep content centered */
 }
 
-h2 {
-    margin-bottom: 20px;
-}
-
-/* Input Fields (Shared Styles) */
-input, select {
+/* Form Container */
+.form-container {
     width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    margin-bottom: 20px; /* Add spacing */
 }
 
-/* Gender Selection */
-.gender {
-    text-align: left;
-    margin: 10px 0;
+/* Background for Form */
+.form-background {
+    background: #1283D9;
+    border-radius: 20px;
+    padding: 20px;
 }
 
-/* Submit Button */
-button {
-    width: 100%;
-    padding: 10px;
-    background: #28a745;
+/* Label Styles */
+.label {
+    display: block;
     color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    font-size: 12px;
+    margin-bottom: 5px;
 }
 
-/* Error Message */
-#error-message {
-    color: red;
-    margin-top: 10px;
+/* Input Fields */
+.input-field {
+    width: 100%;
+    height: 22px;
+    border-radius: 8px;
+    border: 1px solid white;
+    background: #1283D9;
+    margin-bottom: 10px;
+    padding: 5px;
+    color: white;
+}
+.button-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    margin-top: 10px; /* Add spacing above */
 }
 
-/* Link for Switching Between Sign-In and Register */
-p {
-    margin-top: 15px;
+/* Gender Selection (For Sign Up Page) */
+.gender-options {
+    display: flex;
+    gap: 10px;
 }
 
-p a {
-    color: #007bff;
+/* Radio Button Labels */
+.radio-label {
+    color: white;
+    font-size: 12px;
+}
+
+/* Login & Register Text */
+.auth-text {
+    text-align: center;
+    font-size: 14px;
+    color: black;
+}
+
+.auth-text a {
+    color: #0909F1;
     text-decoration: none;
+}
+
+/* Buttons */
+.auth-button {
+    width: 126px;
+    height: 31px;
+    background: #090909;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;  /* Space above */
+    margin-bottom: 10px; /* Space below */
+}
+
+.auth-button:hover {
+    background: #333;
 }

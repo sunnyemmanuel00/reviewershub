@@ -3,41 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Form</title>
+    <title>Sign Up</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="form-container">
-        <h2>Register</h2>
-        <form id="registration-form">
-            <input type="text" id="name" placeholder="Full Name" required>
-            <input type="text" id="username" placeholder="Username" required>
-            <input type="email" id="email" placeholder="Email" required>
-            <input type="password" id="password" placeholder="Password" required>
-            <input type="password" id="confirm-password" placeholder="Repeat Password" required>
-            <input type="tel" id="phone" placeholder="Phone Number" required>
+    <div class="auth-container">
+        <div class="auth-title">Sign Up</div>
+        <div class="form-container">
+            <div class="form-background">
+                <label class="label">Full Name:</label>
+                <input type="text" class="input-field">
 
-            <select id="country" required>
-                <option value="">Select Country</option>
-                <option value="USA">USA</option>
-                <option value="Canada">Canada</option>
-                <option value="UK">UK</option>
-                <option value="India">India</option>
-            </select>
+                <label class="label">Username:</label>
+                <input type="text" class="input-field">
 
-            <input type="text" id="referral" placeholder="Referral Code (Optional)">
+                <label class="label">Email:</label>
+                <input type="email" class="input-field">
 
-            <div class="gender">
-                <label>Gender:</label>
-                <input type="radio" name="gender" value="Male" required> Male
-                <input type="radio" name="gender" value="Female" required> Female
-                <input type="radio" name="gender" value="Other" required> Other
+                <label class="label">Password:</label>
+                <input type="password" class="input-field">
+
+                <label class="label">Repeat Password:</label>
+                <input type="password" class="input-field">
+
+                <label class="label">Phone:</label>
+                <input type="text" class="input-field">
+
+                <label class="label">Country:</label>
+                <input type="text" class="input-field">
+
+                <label class="label">Referral Code:</label>
+                <input type="text" class="input-field">
+
+                <label class="label">Gender:</label>
+                <div class="gender-options">
+                    <label class="radio-label">
+                        <input type="radio" name="gender" value="male">
+                        Male
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="gender" value="female">
+                        Female
+                    </label>
+                </div>
             </div>
+        </div>
 
-            <button type="submit">Register</button>
-        </form>
-        <p id="error-message"></p>
+        <div class="login-text">
+            If you already have an account, <a href="sign-in.html" class="login-link">login here</a>
+        </div>
+
+        <button class="auth-button">Register</button>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
